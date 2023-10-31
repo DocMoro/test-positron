@@ -1,0 +1,12 @@
+.basket__image {
+  background-image: url(../../../image/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  margin-top: 16px;
+  margin-right: 12px;
+
+  width: 32px;
+  height: 32px;
+}

@@ -1,1 +1,13 @@
 @import url(./vendor/normalize.css);
+@import url(./vendor/fonts.css);
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__container/header__container.css);
+@import url(./blocks/basket/basket.css);
+@import url(./blocks/basket/__image/basket__image.css);
+@import url(./blocks/basket/__container/basket__container.css);
+@import url(./blocks/basket/__title/basket__title.css);
+@import url(./blocks/basket/__text/basket__text.css);
+
+h1, h2, h3, p {
+  margin: 0;
+}
