@@ -1,0 +1,12 @@
+.cell__button {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8px 8px;
+
+  padding: 0;
+  border: none;
+  background-color: #F6F8FA;
+
+  width: 34px;
+  height: 34px;
+}

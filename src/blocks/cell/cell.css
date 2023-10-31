@@ -1,0 +1,18 @@
+.cell {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  padding-bottom: 20px;
+  border-bottom: 1px solid #C4C4C4;
+
+  margin-bottom: 25px;
+
+  position: relative;
+}
+
+.cell:last-child {
+  border: none;
+  margin: 0;
+}

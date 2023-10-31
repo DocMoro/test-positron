@@ -1,0 +1,6 @@
+.payment__left-part {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}

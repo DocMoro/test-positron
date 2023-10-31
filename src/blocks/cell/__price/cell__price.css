@@ -1,0 +1,12 @@
+.cell__price {
+  font-family: 'Lato', Arial, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+
+  color: #2C3242;
+
+  position: absolute;
+  right: 53px;
+}

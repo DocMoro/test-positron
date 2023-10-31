@@ -1,5 +1,6 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts.css);
+@import url(./blocks/page/page.css);
 @import url(./blocks/page/__section/page__section.css);
 @import url(./blocks/header/header.css);
 @import url(./blocks/basket/basket.css);
@@ -13,13 +14,32 @@
 @import url(./blocks/navigate/__link/_disabled/navigate__link_disabled.css);
 @import url(./blocks/navigate/__icon/navigate__icon.css);
 @import url(./blocks/link/link.css);
+@import url(./blocks/button/button.css);
 @import url(./blocks/payment/payment.css);
+@import url(./blocks/payment/__left-part/payment__left-part.css);
 @import url(./blocks/payment/__top-panel/payment__top-panel.css);
 @import url(./blocks/payment/__container/payment__container.css);
 @import url(./blocks/payment/__title/payment__title.css);
 @import url(./blocks/payment/__text/payment__text.css);
 @import url(./blocks/payment/__button/payment__button.css);
-@import url(./blocks/button/button.css);
+@import url(./blocks/payment/__list/payment__list.css);
+@import url(./blocks/cell/cell.css);
+@import url(./blocks/cell/__image/cell__image.css);
+@import url(./blocks/cell/__container/cell__container.css);
+@import url(./blocks/cell/__title/cell__title.css);
+@import url(./blocks/cell/__description/cell__description.css);
+@import url(./blocks/cell/__code/cell__code.css);
+@import url(./blocks/cell/__quantity-group/cell__quantity-group.css);
+@import url(./blocks/cell/__bytton-group/cell__bytton-group.css);
+@import url(./blocks/cell/__button/cell__button.css);
+@import url(./blocks/cell/__button/_icon/_reduce/cell__button_icon_reduce.css);
+@import url(./blocks/cell/__counter/cell__counter.css);
+@import url(./blocks/cell/__counter-text/cell__counter-text.css);
+@import url(./blocks/cell/__button/_icon/_add/cell__button_icon_add.css);
+@import url(./blocks/cell/__price-thing/cell__price-thing.css);
+@import url(./blocks/cell/__price-thing/_disabled/cell__price-thing_disabled.css);
+@import url(./blocks/cell/__price/cell__price.css);
+@import url(./blocks/cell/__close/cell__close.css);
 
 
 /*Стилизаця тегов не по БЭМ, однако, в данном случае сильно упрощает работу*/

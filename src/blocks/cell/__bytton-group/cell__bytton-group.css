@@ -1,0 +1,6 @@
+.cell__bytton-group {
+  display: flex;
+  column-gap: 2px;
+
+  margin-left: 80px;
+}

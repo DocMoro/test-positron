@@ -1,0 +1,10 @@
+.cell__counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #F6F8FA;
+
+  width: 34px;
+  height: 34px;
+}

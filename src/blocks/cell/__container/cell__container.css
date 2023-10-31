@@ -1,0 +1,8 @@
+.cell__container {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 263px;
+
+  margin-left: 31px;
+}
