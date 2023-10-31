@@ -1,0 +1,15 @@
+.payment__button {
+  font-family: 'Lato', Arial, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #797B86;
+
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+
+  align-self: flex-end;
+}

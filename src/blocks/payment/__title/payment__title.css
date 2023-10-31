@@ -1,0 +1,11 @@
+.payment__title {
+  font-family: 'Lato', Arial, sans-serif;
+  font-style: normal;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 53px;
+
+  color: #1F2432;
+
+  margin-right: 22px;
+}

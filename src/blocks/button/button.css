@@ -1,10 +1,8 @@
-.link {
-  text-decoration: none;
-  color: #33374E;
+.button {
   transition: opacity .5s ease-in-out;
 }
 
-.link:hover {
+.button:hover {
   cursor: pointer;
   opacity: .6;
 }
