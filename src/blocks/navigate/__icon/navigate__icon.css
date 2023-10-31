@@ -1,0 +1,11 @@
+.navigate__icon {
+  background-image: url(../../../image/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  margin: 8px 10px 0;
+
+  width: 5px;
+  height: 8px;
+}
