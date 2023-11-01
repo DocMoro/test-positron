@@ -1,0 +1,28 @@
+.result__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Lato', Arial, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+
+  color: #0069B4;
+
+  border: 1px solid #0069B4;
+  border-radius: 4px;
+
+  padding: 0;
+  background-color: transparent;
+
+  width: 365px;
+  height: 54px;
+
+  margin-bottom: 12px;
+}
+
+.result__button:last-child {
+  margin: 0;
+}

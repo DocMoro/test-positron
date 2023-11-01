@@ -17,6 +17,7 @@
 @import url(./blocks/button/button.css);
 @import url(./blocks/payment/payment.css);
 @import url(./blocks/payment/__left-part/payment__left-part.css);
+@import url(./blocks/payment/__result/payment__result.css);
 @import url(./blocks/payment/__top-panel/payment__top-panel.css);
 @import url(./blocks/payment/__container/payment__container.css);
 @import url(./blocks/payment/__title/payment__title.css);
@@ -40,6 +41,15 @@
 @import url(./blocks/cell/__price-thing/_disabled/cell__price-thing_disabled.css);
 @import url(./blocks/cell/__price/cell__price.css);
 @import url(./blocks/cell/__close/cell__close.css);
+@import url(./blocks/result/result.css);
+@import url(./blocks/result/__title/result__title.css);
+@import url(./blocks/result/__container/result__container.css);
+@import url(./blocks/result/__subtitle/result__subtitle.css);
+@import url(./blocks/result/__bottom-panel/result__bottom-panel.css);
+@import url(./blocks/result/__bottom-subtitle/result__bottom-subtitle.css);
+@import url(./blocks/result/__bottom-text/result__bottom-text.css);
+@import url(./blocks/result/__button/result__button.css);
+@import url(./blocks/result/__button/_color/_blue/result__button_color_blue.css);
 
 
 /*Стилизаця тегов не по БЭМ, однако, в данном случае сильно упрощает работу*/

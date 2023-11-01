@@ -1,0 +1,10 @@
+.result__bottom-panel {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 10px;
+  border-top: 1px solid #AEB0B6;
+
+  margin-top: 28px;
+  margin-bottom: 30px;
+}

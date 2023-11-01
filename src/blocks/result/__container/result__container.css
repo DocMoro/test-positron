@@ -1,0 +1,10 @@
+.result__container {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 17px;
+}
+
+.result__container:last-child {
+  margin: 0;
+}

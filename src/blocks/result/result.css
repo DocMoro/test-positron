@@ -1,0 +1,7 @@
+.result {
+  display: flex;
+  flex-direction: column;
+
+  width: 425px;
+  padding: 35px 30px;
+}
