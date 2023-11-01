@@ -17,6 +17,7 @@
 @import url(./blocks/button/button.css);
 @import url(./blocks/payment/payment.css);
 @import url(./blocks/payment/__left-part/payment__left-part.css);
+@import url(./blocks/payment/__checkbox/payment__checkbox.css);
 @import url(./blocks/payment/__result/payment__result.css);
 @import url(./blocks/payment/__top-panel/payment__top-panel.css);
 @import url(./blocks/payment/__container/payment__container.css);
@@ -50,6 +51,13 @@
 @import url(./blocks/result/__bottom-text/result__bottom-text.css);
 @import url(./blocks/result/__button/result__button.css);
 @import url(./blocks/result/__button/_color/_blue/result__button_color_blue.css);
+@import url(./blocks/checkbox/checkbox.css);
+@import url(./blocks/checkbox/__image/checkbox__image.css);
+@import url(./blocks/checkbox/__conteiner/checkbox__conteiner.css);
+@import url(./blocks/checkbox/__subtitle/checkbox__subtitle.css);
+@import url(./blocks/checkbox/__text/checkbox__text.css);
+@import url(./blocks/checkbox/__input/checkbox__input.css);
+@import url(./blocks/checkbox/__wrap/checkbox__wrap.css);
 
 
 /*Стилизаця тегов не по БЭМ, однако, в данном случае сильно упрощает работу*/

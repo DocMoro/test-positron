@@ -1,0 +1,8 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+
+  background-color: #F6F8FA;
+
+  padding: 26px 25px;
+}
