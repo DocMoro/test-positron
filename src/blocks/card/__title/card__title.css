@@ -1,0 +1,11 @@
+.card__title {
+  font-family: 'Lato', Arial, sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+
+  color: #1F2432;
+
+  margin-top: 5px;
+}

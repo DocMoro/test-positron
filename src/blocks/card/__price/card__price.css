@@ -1,0 +1,11 @@
+.card__price {
+  font-family: 'Lato', Arial, sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+
+  color: #1F2432;
+
+  margin-bottom: 3px;
+}

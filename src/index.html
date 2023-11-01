@@ -70,6 +70,26 @@
               </div>
               <button class="cell__button cell__button_icon_add button" type="button"></button>
             </div>
+            <p class="cell__price-thing cell__price-thing_disabled">12 644 ₽/шт.</p>
+          </div>
+          <p class="cell__price">12 644 ₽</p>
+          <button class="cell__close button"></button>
+        </li>
+        <li class="cell payment__cell">
+          <img class="cell__image" src="<%=require('./image/g2h.jpg')%>" alt="Картинка товар"/>
+          <div class="cell__container">
+            <h3 class="cell__title">Вытяжное устройство G2H</h3>
+            <p class="cell__description">12-72/168 м3/ч / гидрорегулируемый расход / от датчика присутствия</p>
+            <p class="cell__code">Артикул: G2H1065</p>
+          </div>
+          <div class="cell__quantity-group">
+            <div class="cell__bytton-group">
+              <button class="cell__button cell__button_icon_reduce button" type="button"></button>
+              <div class="cell__counter">
+                <p class="cell__counter-text">2</p>
+              </div>
+              <button class="cell__button cell__button_icon_add button" type="button"></button>
+            </div>
             <p class="cell__price-thing">12 644 ₽/шт.</p>
           </div>
           <p class="cell__price">12 644 ₽</p>
@@ -104,9 +124,56 @@
         <p class="result__bottom-subtitle">Стоимость товаров</p>
         <p class="result__bottom-text">50 576 ₽</p>
       </div>
-      <button class="result__button result__button_color_blue button">Оформить заказ</button>
-      <button class="result__button button">Купить в 1 клик</button>
+      <button class="template__button template__button_color_blue button" type="submit">Оформить заказ</button>
+      <button class="template__button button" type="submit">Купить в 1 клик</button>
     </div>
+  </section>
+  <section class="slider page__section">
+    <div class="slider__container">
+      <h2 class="slider__title">Просмотренные товары</h2>
+      <div class="slider__button-group">
+        <button class="slider__button slider__button_icon_prev button" type="button"></button>
+        <p class="slider__counter">
+          <span class="slider__current-page">1</span>
+          /6
+        </p>
+        <button class="slider__button slider__button_icon_next button" type="button"></button>
+      </div>
+    </div>
+    <ul class="slider__list">
+      <li class="card slider__card">
+        <img class="card__image" src="<%=require('./image/g2h.jpg')%>" alt="Картинка товар"/>
+        <h3 class="card__title">G2H</h3>
+        <p class="card__description">Многофункциональное вытяжное устройство для естественной и гибридной вентиляции</p>
+        <p class="card__price">6 848 ₽ – 56 584 ₽</p>
+        <p class="card__price-euro">77.60 € – 643.86 €</p>
+        <button class="template__button template__button_color_blue button">Подробнее</button>
+      </li>
+      <li class="card slider__card">
+        <img class="card__image" src="<%=require('./image/g2h.jpg')%>" alt="Картинка товар"/>
+        <h3 class="card__title">G2H</h3>
+        <p class="card__description">Многофункциональное вытяжное устройство для естественной и гибридной вентиляции</p>
+        <p class="card__price">6 848 ₽ – 56 584 ₽</p>
+        <p class="card__price-euro">77.60 € – 643.86 €</p>
+        <button class="template__button template__button_color_blue button">Подробнее</button>
+      </li>
+      <li class="card slider__card">
+        <img class="card__image" src="<%=require('./image/g2h.jpg')%>" alt="Картинка товар"/>
+        <h3 class="card__title">G2H</h3>
+        <p class="card__description">Многофункциональное вытяжное устройство для естественной и гибридной вентиляции</p>
+        <p class="card__price">6 848 ₽ – 56 584 ₽</p>
+        <p class="card__price-euro">77.60 € – 643.86 €</p>
+        <button class="template__button template__button_color_blue button">Подробнее</button>
+      </li>
+      <li class="card slider__card">
+        <img class="card__image" src="<%=require('./image/g2h.jpg')%>" alt="Картинка товар"/>
+        <h3 class="card__title">G2H</h3>
+        <p class="card__description">Многофункциональное вытяжное устройство для естественной и гибридной вентиляции</p>
+        <p class="card__price">6 848 ₽ – 56 584 ₽</p>
+        <p class="card__price-euro">77.60 € – 643.86 €</p>
+        <button class="template__button template__button_color_blue button">Подробнее</button>
+      </li>
+    </ul>
   </section>
 </body>
 </html>

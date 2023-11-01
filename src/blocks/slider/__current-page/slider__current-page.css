@@ -1,0 +1,9 @@
+.slider__current-page {
+  font-family: 'Lato', Arial, sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+
+  color: #1F2432;
+}

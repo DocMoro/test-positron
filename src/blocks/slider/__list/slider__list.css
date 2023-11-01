@@ -1,0 +1,13 @@
+.slider__list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(305px, 1fr));
+  column-gap: 20px;
+
+  padding: 0;
+  list-style: none;
+
+  min-height: 563px;
+
+  margin-top: 60px;
+  margin-bottom: 116px;
+}

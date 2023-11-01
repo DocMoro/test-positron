@@ -49,8 +49,6 @@
 @import url(./blocks/result/__bottom-panel/result__bottom-panel.css);
 @import url(./blocks/result/__bottom-subtitle/result__bottom-subtitle.css);
 @import url(./blocks/result/__bottom-text/result__bottom-text.css);
-@import url(./blocks/result/__button/result__button.css);
-@import url(./blocks/result/__button/_color/_blue/result__button_color_blue.css);
 @import url(./blocks/checkbox/checkbox.css);
 @import url(./blocks/checkbox/__image/checkbox__image.css);
 @import url(./blocks/checkbox/__conteiner/checkbox__conteiner.css);
@@ -58,7 +56,24 @@
 @import url(./blocks/checkbox/__text/checkbox__text.css);
 @import url(./blocks/checkbox/__input/checkbox__input.css);
 @import url(./blocks/checkbox/__wrap/checkbox__wrap.css);
-
+@import url(./blocks/template-button/template__button.css);
+@import url(./blocks/template-button/_color/_blue/template__button_color_blue.css);
+@import url(./blocks/slider/slider.css);
+@import url(./blocks/slider/__container/slider__container.css);
+@import url(./blocks/slider/__title/slider__title.css);
+@import url(./blocks/slider/__button-group/slider__button-group.css);
+@import url(./blocks/slider/__button/slider__button.css);
+@import url(./blocks/slider/__button/_icon/_prev/slider__button_icon_prev.css);
+@import url(./blocks/slider/__button/_icon/_next/slider__button_icon_next.css);
+@import url(./blocks/slider/__current-page/slider__current-page.css);
+@import url(./blocks/slider/__counter/slider__counter.css);
+@import url(./blocks/slider/__list/slider__list.css);
+@import url(./blocks/card/card.css);
+@import url(./blocks/card/__image/card__image.css);
+@import url(./blocks/card/__title/card__title.css);
+@import url(./blocks/card/__description/card__description.css);
+@import url(./blocks/card/__price/card__price.css);
+@import url(./blocks/card/__price-euro/card__price-euro.css);
 
 /*Стилизаця тегов не по БЭМ, однако, в данном случае сильно упрощает работу*/
 h1, h2, h3, p {
