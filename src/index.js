@@ -15,13 +15,8 @@ const listProds = new Section(createProd, '.payment', form.setDataForm, basket.s
 listProds.renderItems(dataProds);
 listProds.setPriceChange();
 
-
 function createProd(dataProd) {
   const prod = new Prod(dataProd, '.template-cell', listProds.handlePriceChange, listProds.handleDeleteEl);
   const elementProd = prod.generateProd();
   return elementProd;
-}
-
-function clearList() {
-  listProds.clear();
 }

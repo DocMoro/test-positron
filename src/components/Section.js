@@ -5,6 +5,7 @@ export default class Section {
     this._container = this._section.querySelector(sectionClass + '__list');
     this._buttonDeleteEl = this._section.querySelector('.payment__button');
     this._checboxEl = this._section.querySelector('.checkbox__input')
+    this._submitBtn = this._section.querySelector('#submit-btn');
     this._isChecked = false;
     this._fullPrice = 0;
     this._quantityProds = 0;
@@ -75,6 +76,22 @@ export default class Section {
 
   _setEventListeners() {
     this._checboxEl.addEventListener('click', (e) => this._handlerClickCheckbox(e));
-    this._buttonDeleteEl.addEventListener('click', () => this._clear())
+    this._buttonDeleteEl.addEventListener('click', () => this._clear());
+    this._submitBtn.addEventListener('click', () => this._handleSubmitClick());
+  }
+
+  _handleSubmitClick() {
+    const elements = this._container.querySelectorAll('.cell');
+    const data = [];
+
+    elements.forEach((el, index) => {
+      const result = {};
+      result.name = el.querySelector('.cell__title').textContent;
+      result.descriptions = el.querySelector('.cell__description').textContent;
+      result.vcode = el.querySelector('.cell__code').textContent;
+      result.quantity = el.querySelector('.cell__counter-text').textContent;
+      data[index] = result;
+    });
+    console.log(data);
   }
 }
