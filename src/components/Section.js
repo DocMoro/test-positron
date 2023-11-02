@@ -1,13 +1,16 @@
 export default class Section {
-  constructor(renderer, sectionClass, setDataForm, setDataBasket) {
+  constructor(renderer, sectionClass, setDataForm, setDataBasket, setDataPanel) {
     this._renderer = renderer;
     this._section = document.querySelector(sectionClass);
     this._container = this._section.querySelector(sectionClass + '__list');
+    this._buttonDeleteEl = this._section.querySelector('.payment__button');
+    this._checboxEl = this._section.querySelector('.checkbox__input')
     this._isChecked = false;
     this._fullPrice = 0;
     this._quantityProds = 0;
     this._setDataForm = setDataForm;
     this._setDataBasket = setDataBasket;
+    this._setDataPanel = setDataPanel;
     this.handlePriceChange = this.handlePriceChange.bind(this);
     this.handleDeleteEl = this.handleDeleteEl.bind(this);
   }
@@ -21,8 +24,13 @@ export default class Section {
     this.setPriceChange();
   }
 
-  clear() {
+  _clear() {
     this._container.innerHTML = '';
+
+    this._fullPrice = 0;
+    this._quantityProds = 0;
+
+    this.setPriceChange();
   }
 
   renderItems(data) {
@@ -44,6 +52,7 @@ export default class Section {
   setPriceChange() {
     this._setDataForm(this._fullPrice, this._quantityProds, this._isChecked);
     this._setDataBasket(this._fullPrice, this._quantityProds);
+    this._setDataPanel(this._quantityProds);
   }
 
   changePrice(operation, priceEl) {
@@ -65,7 +74,7 @@ export default class Section {
   }
 
   _setEventListeners() {
-    this._section.querySelector('.checkbox__input')
-      .addEventListener('click', (e) => this._handlerClickCheckbox(e));
+    this._checboxEl.addEventListener('click', (e) => this._handlerClickCheckbox(e));
+    this._buttonDeleteEl.addEventListener('click', () => this._clear())
   }
 }

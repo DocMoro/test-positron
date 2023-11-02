@@ -3,7 +3,7 @@ const dataProds = [
     name: 'Вытяжное устройство G2H',
     description: '12-72/168 м3/ч / гидрорегулируемый расход / от датчика присутствия',
     vcode: 'G2H1065',
-    price: 12644,
+    price: 10644,
     link: '<%=require(\'./image/g2h.jpg\')%>',
     quantity: 1
   },
@@ -19,7 +19,7 @@ const dataProds = [
     name: 'Вытяжное устройство GHN',
     description: '12-72/168 м3/ч / гидрорегулируемый расход / от датчика присутствия',
     vcode: 'G2H1065',
-    price: 12644,
+    price: 16646,
     link: '<%=require(\'./image/ghn.jpg\')%>',
     quantity: 2
   }
