@@ -15,7 +15,7 @@ export default class Prod {
     this._template = document.querySelector(this._selector).content;
     this._element = this._template.querySelector('.cell').cloneNode(true);
     this._imageElement = this._element.querySelector('.cell__image');
-    this._imageElement.src = `require(${this._link})`;
+    this._imageElement.src = this._link;
     this._imageElement.alt = this._name;
     this._titleElement = this._element.querySelector('.cell__title');
     this._titleElement.textContent = this._name;

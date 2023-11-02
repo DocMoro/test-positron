@@ -1,10 +1,15 @@
+import g2h from '../image/g2h.jpg';
+import ghn from '../image/ghn.jpg';
+import vxc from '../image/vxc.jpg';
+
+
 const dataProds = [
   {
     name: 'Вытяжное устройство G2H',
     description: '12-72/168 м3/ч / гидрорегулируемый расход / от датчика присутствия',
     vcode: 'G2H1065',
     price: 10644,
-    link: '<%=require(\'./image/g2h.jpg\')%>',
+    link: g2h,
     quantity: 1
   },
   {
@@ -12,7 +17,7 @@ const dataProds = [
     description: '12-72/168 м3/ч / гидрорегулируемый расход / от датчика присутствия',
     vcode: 'G2H1065',
     price: 12644,
-    link: './image/vhc.jpg',
+    link: vxc,
     quantity: 3
   },
   {
@@ -20,7 +25,7 @@ const dataProds = [
     description: '12-72/168 м3/ч / гидрорегулируемый расход / от датчика присутствия',
     vcode: 'G2H1065',
     price: 16646,
-    link: '<%=require(\'./image/ghn.jpg\')%>',
+    link: ghn,
     quantity: 2
   }
 ];
