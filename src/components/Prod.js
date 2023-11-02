@@ -1,5 +1,5 @@
 export default class Prod {
-  constructor(dataProd, selector) {
+  constructor(dataProd, selector, handlePriceChange) {
     this._name = dataProd.name;
     this._description = dataProd.description;
     this._vcode = dataProd.vcode;
@@ -7,6 +7,7 @@ export default class Prod {
     this._link = dataProd.link;
     this._quantity = dataProd.quantity;
     this._selector = selector;
+    this._handlePriceChange = handlePriceChange;
   }
 
   generateProd() {
@@ -34,7 +35,8 @@ export default class Prod {
 
   _setFullPrice() {
     this._setQuantity();
-    this._priceElement.textContent = this._price * this._quantity + ' ₽';
+    const fullPrice = this.getFullPrise();
+    this._priceElement.textContent = fullPrice + ' ₽';
   }
 
   _setQuantity() {
@@ -56,11 +58,13 @@ export default class Prod {
       return
     }
     this._setFullPrice();
+    this._handlePriceChange('-', this._price);
   }
 
   _handleIncreaseQuantity() {
     this._quantity = this._quantity + 1;
     this._setFullPrice();
+    this._handlePriceChange('+', this._price);
   }
 
   _checkQuantity() {
@@ -74,5 +78,9 @@ export default class Prod {
   _removeProd() {
     this._element.remove();
     this._element = null;
+  }
+
+  getFullPrise() {
+    return this._price * this._quantity;
   }
 }
