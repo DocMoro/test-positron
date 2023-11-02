@@ -1,5 +1,5 @@
 export default class Section {
-  constructor(renderer, sectionClass, setDataForm) {
+  constructor(renderer, sectionClass, setDataForm, setDataBasket) {
     this._renderer = renderer;
     this._section = document.querySelector(sectionClass);
     this._container = this._section.querySelector(sectionClass + '__list');
@@ -7,6 +7,7 @@ export default class Section {
     this._fullPrice = 0;
     this._quantityProds = 0;
     this._setDataForm = setDataForm;
+    this._setDataBasket = setDataBasket;
     this.handlePriceChange = this.handlePriceChange.bind(this);
     this.handleDeleteEl = this.handleDeleteEl.bind(this);
   }
@@ -42,6 +43,7 @@ export default class Section {
 
   setPriceChange() {
     this._setDataForm(this._fullPrice, this._quantityProds, this._isChecked);
+    this._setDataBasket(this._fullPrice, this._quantityProds);
   }
 
   changePrice(operation, priceEl) {
