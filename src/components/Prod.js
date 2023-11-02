@@ -1,5 +1,5 @@
 export default class Prod {
-  constructor(dataProd, selector, handlePriceChange) {
+  constructor(dataProd, selector, handlePriceChange, handleDeleteEl) {
     this._name = dataProd.name;
     this._description = dataProd.description;
     this._vcode = dataProd.vcode;
@@ -7,6 +7,7 @@ export default class Prod {
     this._link = dataProd.link;
     this._quantity = dataProd.quantity;
     this._selector = selector;
+    this.handleDeleteEl = handleDeleteEl;
     this._handlePriceChange = handlePriceChange;
   }
 
@@ -46,25 +47,28 @@ export default class Prod {
 
   _setEventListeners() {
     this._buttonReduce.addEventListener('click', () => this._handleReduceQuantity());
-    this._element.querySelector('.cell__close').addEventListener('click', () => this._removeProd());
+    this._element.querySelector('.cell__close').addEventListener('click', () => {
+      this.handleDeleteEl(this);
+      this._removeProd()
+    });
     this._buttonAdd.addEventListener('click', () => this._handleIncreaseQuantity());
   }
 
   _handleReduceQuantity() {
     this._quantity = this._quantity - 1;
 
+    this._setFullPrice();
+    this._handlePriceChange('-', this._price, this._quantity);
+
     if(this._quantity === 0) {
       this._removeProd();
-      return
     }
-    this._setFullPrice();
-    this._handlePriceChange('-', this._price);
   }
 
   _handleIncreaseQuantity() {
     this._quantity = this._quantity + 1;
     this._setFullPrice();
-    this._handlePriceChange('+', this._price);
+    this._handlePriceChange('+', this._price, this._quantity);
   }
 
   _checkQuantity() {
@@ -82,5 +86,9 @@ export default class Prod {
 
   getFullPrise() {
     return this._price * this._quantity;
+  }
+
+  getQuantity() {
+    return this._quantity;
   }
 }
